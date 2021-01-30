@@ -1,0 +1,364 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+/*Reseteo CSS*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*Tipografia de Google Fonts*/
+html{
+	font-size: 0.75em;
+	font-family: 'Merriweather', serif;
+}
+
+/*Fondo header color igual al logo*/
+/*GRID al header*/
+header{
+	height: 25em;
+	background-color: #1a2250;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.mobile{
+	display: none;
+}
+
+.logo{
+	grid-area: logo;
+	height: 100%;
+}
+
+
+/*Color a parrafos*/
+p{
+	color:#f2f2f2;
+}
+
+main{
+	font-size: 1.5em;
+	background-color: #b09e72;
+	padding: 2em;
+}
+
+
+.navbar{
+	width: 100%;
+}
+
+.navMenu ul li{
+	margin-left: 20px;
+	padding: 5px;
+	transition: transform 2s;
+	font-size: 1.5em;
+}
+
+.navMenu ul li:hover{
+	transform: scale(1.25, 1.5);
+}
+
+/*Secciones del index*/
+
+.carousel{
+	width: 33%;
+	margin: 0 auto;
+}
+
+section{
+	width: 66%;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.info_estudio{
+	background-color: #b09e72;
+	display: block;
+	text-align: center;
+}
+
+
+.ubicacion{
+	height: 25em;
+	background-image: url("img/mapa.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: 100px 1500px;
+	line-height: 5em;
+	transition: 1.5s;
+}
+
+.ubicacion:hover{
+	background-image: url("img/mapa.png");
+	background-position: center;
+}
+
+.ubicacion h2{
+	color: black;
+	text-align: center;
+	font-size: 5em;
+}
+.ubicacion p {
+	color: black;
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 3em;
+}
+
+.servicios{
+	background-color: #b09e72;
+}
+
+h2{
+	color: #f2f2f2;
+}
+/*Colores a etiquetas*/
+th{
+	color: #e60000;
+	border: 1px solid brown;
+	background-color: #ffc266;
+}
+
+td{
+	border: 1px solid black;
+}
+/*Color a listas*/
+li{
+	color: #ff3300;
+}
+
+.servicios li{
+	color: #f2f2f2;
+	text-decoration: underline;
+	list-style-position: inside;
+}
+
+.servicios h2{
+	text-align: center;
+}
+
+#map{
+	height: 200px;
+}
+
+
+/*Practica centrar elementos de redes sociales*/
+
+footer{
+	background-color: #352d21;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	padding: 2em;
+}
+.socialmedia img{
+	margin-left: 1em;
+	width: 50px;
+	margin: 10px;
+}
+
+.info_estudio img{
+	height: 200px;
+}
+
+
+/*Secciones de Legal*/
+
+#servi_juri{
+	background-color: #b09e72;
+	text-align: center;
+}
+
+#servi_juri ul{
+	list-style-position: inside;
+}
+
+#servi_juri ul li{
+	color: #f2f2f2;
+}
+
+#equipoJuri{
+	background-color: #80bfff;
+	text-align: center;
+}
+.equipoLegal{
+	height: 150px;
+}
+
+.abogados{
+	display: inline-block;
+	margin: 0 25px;
+}
+
+/*Secciones de Contable*/
+
+#servi_conta{
+	background-color: #b09e72;
+	text-align: center;
+}
+
+#servi_conta ul{
+	list-style-position: inside;
+}
+
+#servi_conta ul li{
+	color: #f2f2f2;
+}
+
+#equipoConta{
+	background-color: #80bfff;
+	text-align: center;
+}
+.equipoConta{
+	height: 150px;
+}
+
+.acountant{
+	display: inline-block;
+	margin: 0 25px;
+}
+
+/*Secciones de About*/
+
+.history{
+	background-color: #b09e72;
+	display: grid;
+	grid-template-areas:
+	". titulo ."
+	"historia1 historia2 historia3"
+	"parrafo parrafo parrafo";
+	grid-template-columns: 33%;
+	justify-items: center;
+	align-items: end;
+}
+
+.history h2{
+	grid-area: titulo;
+	margin: 15px auto;
+	font-size: 30px;
+}
+
+.historia1{
+	grid-area: historia1;
+}
+
+.historia2{
+	grid-area: historia2;
+}
+
+.historia3{
+	grid-area: historia3;
+}
+
+.history p{
+	grid-area: parrafo;
+	margin: 15px;
+}
+
+.clientes{
+	background-color: #80bfff;
+}
+
+.fotoHistoria{
+	width: 60%;
+	display: inline;
+	transition: 0.75s;
+}
+
+.fotoHistoria:hover{
+	width: 75%;
+}
+
+.clientes{
+	display: grid;
+	grid-template-areas:
+	". opinion ."
+	"nombre1 nombre2 nombre3";
+	justify-items: center;
+	grid-template-columns: 30%
+}
+
+.clientes h2{
+	grid-area: opinion;
+	margin: 15px auto;
+}
+
+.cl1{
+	grid-area: nombre1;
+}
+
+.cl2{
+	grid-area: nombre2;
+}
+
+.cl3{
+	grid-area: nombre3;
+}
+
+.cliente{
+	width: 10em;
+	transition: 0.75s;
+}
+
+.cliente:hover{
+	width: 12em;
+}
+
+.valoracion{
+	text-align: center;
+}
+
+
+/*Secciones de Contact*/
+
+.contacto{
+	font-size: 1.5em;
+	color: #f2f2f2;
+	background-color: #80bfff;
+	text-align: center;
+}
+
+.contacto li{
+	color: #f2f2f2;
+}
+
+.modal-dialog{
+	color: black;
+}
+
+/*Para moviles*/
+
+@media (max-width: 576px){
+	main{
+		padding: 0;
+	}
+	section{
+		width: 100%;
+		margin: 0 auto;
+		font-size: 0.75em;
+	}
+
+	.mobile{
+		display: block;
+		background-position: center;
+		background-color: #1a2250;
+	}
+
+	.mobile img{
+		margin-left: 4.5em;
+	}
+
+	.pc{
+		display: none;
+	}
+
+	.ubicacion{
+		background-image: url("img/mapa.png");
+		background-position: center;
+	}
+
+}
