@@ -361,4 +361,8 @@ footer{
 		background-position: center;
 	}
 
+	.carousel{
+		width: 100%;
+	}
+
 }
